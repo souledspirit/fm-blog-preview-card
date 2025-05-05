@@ -15,3 +15,11 @@
   --border-radius: 15px;
   --box-shadow: 8px 8px 0 var(--gray-950);
 }
+
+body {
+  height: 100vh;
+  background-color: var(--yellow);
+  margin: 0;
+  padding: 0;
+  font-family: var(--font-family);
+}
