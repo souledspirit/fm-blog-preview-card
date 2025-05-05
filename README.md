@@ -38,7 +38,7 @@ Users should be able to:
 ## Live Links
 
 - **Solution URL:** [Add solution URL here](https://your-solution-url.com)
-- **Live Site URL:** [Add live site URL here](https://your-live-site-url.com)
+- **Live Site URL:** [Live site URL](https://souledspirit.github.io/fm-blog-preview-card/)
 
 ---
 
