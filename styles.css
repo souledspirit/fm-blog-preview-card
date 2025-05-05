@@ -1,23 +1,17 @@
 :root {
-  /* Colors */
   --yellow: hsl(47, 88%, 63%);
   --white: hsl(0, 0%, 100%);
   --gray-500: hsl(0, 0%, 42%);
   --gray-950: hsl(0, 0%, 7%);
-
-  /* Typography */
   --font-family: "Figtree", sans-serif;
   --font-size-body: 16px;
   --font-weight-medium: 500;
   --font-weight-bold: 800;
   --font-size-secondary: 14px;
-
-  /* Spacing */
+  --font-size-medium: 16px;
   --border-radius: 15px;
   --box-shadow: 8px 8px 0 var(--gray-950);
-
   --card-width: 327px;
-  --card-height: 501px;
 }
 
 body {
@@ -33,12 +27,12 @@ body {
 }
 
 .blog-card {
-  height: var(--card-height);
   width: var(--card-width);
   background-color: var(--white);
   border-radius: var(--border-radius);
   border: 1px solid var(--gray-950);
   box-shadow: var(--box-shadow);
+  overflow: hidden;
 }
 
 .card-holder {
@@ -50,49 +44,64 @@ body {
 
 .card__thumbnail {
   width: 100%;
-  height: 200px;
+  aspect-ratio: 16/9;
   object-fit: cover;
   border-radius: 10px;
 }
 
-.card_date {
-  display: block;
-  font-size: var(--font-size-secondary);
-  font-weight: var(--font-weight-medium);
-  color: var(--gray-500);
-}
-
-.card_title {
-  font-size: 24px;
-  font-weight: var(--font-weight-bold);
-  color: var(--gray-950);
-}
-.card__author {
+.card__content {
   display: flex;
-  align-items: center;
+  flex-direction: column;
   gap: 12px;
 }
 
-.card_category {
+.card__content > * {
+  padding-top: 12px;
+}
+
+.card__content > :first-child {
+  padding-top: 0;
+}
+
+.card__category {
+  display: inline-block;
+  width: auto;
   padding: 4px 12px;
   font-size: var(--font-size-secondary);
   font-weight: var(--font-weight-bold);
   color: var(--gray-950);
   background-color: var(--yellow);
   border-radius: 4px;
+  margin: 0;
 }
 
-.card-description {
+.card__date {
+  font-size: var(--font-size-secondary);
+  font-weight: var(--font-weight-medium);
+  color: var(--gray-500);
+}
+
+.card__title {
+  font-size: 2.25rem;
+  line-height: 1.1;
+  font-weight: var(--font-weight-bold);
+  color: var(--gray-950);
+  margin: 0;
+}
+
+.card__description {
   font-size: var(--font-size-medium);
   font-weight: var(--font-weight-medium);
   color: var(--gray-500);
   line-height: 1.5;
 }
-.card_content {
+
+.card__author {
   display: flex;
-  flex-direction: column;
+  align-items: center;
   gap: 12px;
 }
+
 .author__avatar {
   width: 32px;
   height: 32px;
@@ -108,6 +117,5 @@ body {
 @media (min-width: 1440px) {
   :root {
     --card-width: 384px;
-    --card-height: 522px;
   }
 }
