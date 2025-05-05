@@ -14,6 +14,9 @@
   /* Spacing */
   --border-radius: 15px;
   --box-shadow: 8px 8px 0 var(--gray-950);
+
+  --card-width: 327px;
+  --card-height: 501px;
 }
 
 body {
@@ -21,5 +24,20 @@ body {
   background-color: var(--yellow);
   margin: 0;
   padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   font-family: var(--font-family);
+}
+
+@media (min-width: 1440px) {
+  --card-width: 384px;
+  --card-height: 522px;
+}
+
+.blog-card {
+  height: var(--card-height);
+  width: var(--card-width);
+  background-color: var(--white);
+  border-radius: var(--border-radius);
 }
