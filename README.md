@@ -74,16 +74,6 @@ h1:hover {
 
 ---
 
-## Continued Development
-
-- Learn to use clamp() for responsive typography without media queries.
-
-- Explore utility-first CSS frameworks like Tailwind CSS for better spacing control.
-
-- Focus on mastering fluid layouts.
-
----
-
 ## Useful Resources
 
 - [MDN Web Docs – Using rem units](https://developer.mozilla.org/en-US/docs/Web/CSS/font-size#values)  
