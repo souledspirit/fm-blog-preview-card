@@ -1,0 +1,17 @@
+:root {
+  /* Colors */
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+
+  /* Typography */
+  --font-family: "Figtree", sans-serif;
+  --font-size-body: 16px;
+  --font-weight-medium: 500;
+  --font-weight-bold: 800;
+
+  /* Spacing */
+  --border-radius: 15px;
+  --box-shadow: 8px 8px 0 var(--gray-950);
+}
